@@ -1,8 +1,8 @@
 package clases;
 
 public class Espectador {
-	final private String NOMBRE_POR_DEFECTO = "John Doe";
-	final private int EDAD_POR_DEFECTO = 25;
+	final private String NOMBRE_POR_DEFECTO = "";
+	final private int EDAD_POR_DEFECTO = 0;
 	final private double DINERO_POR_DEFECTO = 0.0;
 
 	private String nombre;
@@ -19,6 +19,11 @@ public class Espectador {
 		this.nombre = nombre;
 		this.edad = edad;
 		this.dinero = dinero;
+	}
+
+	@Override
+	public String toString() {
+		return ("Nombre: " + this.nombre + "\n" + "Edad: " + this.edad + "\n" + "Cash: " + this.dinero);
 	}
 
 	public String getNombre() {
