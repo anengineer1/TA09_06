@@ -26,6 +26,12 @@ public class Pelicula {
 		this.edad_minima = edad_minima;
 	}
 
+	@Override
+	public String toString() {
+		return ("Titulo: " + this.titulo + "\n" + "Director: " + this.director + "\n" + "Duración: " + this.duracion
+				+ "\n" + "Edad mínima: " + this.edad_minima);
+	}
+
 	public String getTitulo() {
 		return titulo;
 	}
