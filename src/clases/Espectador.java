@@ -20,6 +20,22 @@ public class Espectador {
 		this.edad = edad;
 		this.dinero = dinero;
 	}
+	
+	public static boolean sePuedeSentar(Espectador espectador, Cine cine, Pelicula pelicula) {
+		boolean sePuedeSentar = true;
+		
+		if(espectador.dinero < cine.getPrecio()) {
+			System.out.println("El espectador " + espectador.nombre + " no puede pagar la entrada");
+			sePuedeSentar = false;
+		} else if (espectador.edad < pelicula.getEdad_minima()) {
+			System.out.println("El espectador " + espectador.nombre  + " no eiene la edad suficiente para ver la pelicula");
+			sePuedeSentar = false;
+		} else if(cine.isTodoLleno() == true) {
+			System.out.println("El espectador " + espectador.nombre  + " no puede entrar porque el cine esta todo lleno");
+			sePuedeSentar = false;
+		}
+		return sePuedeSentar;
+	}
 
 	@Override
 	public String toString() {

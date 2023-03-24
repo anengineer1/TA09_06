@@ -2,96 +2,91 @@ package utils;
 
 public class CustomParser {
 	
-	public static char numToColumnParser(int columna) {
+	public static String numToLetra(int NumColumna) {
 		// Pasamos un número del 0 a numtotal-1
-		char col = 0;
-		switch (columna) {
+		String LetraColumna = "";
+		switch (NumColumna) {
 		case 0:
-			col = 'A';
+			LetraColumna = "A";
 			break;
 
 		case 1:
-			col = 'B';
+			LetraColumna = "B";
 			break;
 
 		case 2:
-			col = 'C';
+			LetraColumna = "C";
 			break;
 
 		case 3:
-			col = 'D';
+			LetraColumna = "D";
 			break;
 
 		case 4:
-			col = 'E';
+			LetraColumna = "E";
 			break;
 
 		case 5:
-			col = 'F';
+			LetraColumna = "F";
 			break;
 
 		case 6:
-			col = 'G';
+			LetraColumna = "G";
 			break;
 
 		case 7:
-			col = 'H';
+			LetraColumna = "H";
 			break;
 
 		case 8:
-			col = 'I';
+			LetraColumna = "I";
 			break;
 
 		default:
 			break;
 		}
-		return col;
+		return LetraColumna;
 	}
-
-	public static int columnParser(char columna) {
-		// Pasamos un letra y devuelve su correspondiente posición
-		// para una tabla
-		int col = 0;
-		switch (Character.toLowerCase(columna)) {
-		case 'a':
-			col = 0;
+	
+	public static int invertirNum(int NumFila) {
+		// Pasamos un número del 0 a numtotal-1
+		int LetraColumna = 0;
+		switch (NumFila) {
+		case 1:
+			LetraColumna = 8;
 			break;
 
-		case 'b':
-			col = 1;
+		case 2:
+			LetraColumna = 7;
 			break;
 
-		case 'c':
-			col = 2;
+		case 3:
+			LetraColumna = 6;
 			break;
 
-		case 'd':
-			col = 3;
+		case 4:
+			LetraColumna = 5;
 			break;
 
-		case 'e':
-			col = 4;
+		case 5:
+			LetraColumna = 4;
 			break;
 
-		case 'f':
-			col = 5;
+		case 6:
+			LetraColumna = 3;
 			break;
 
-		case 'g':
-			col = 6;
+		case 7:
+			LetraColumna = 2;
 			break;
 
-		case 'h':
-			col = 7;
+		case 8:
+			LetraColumna = 1;
 			break;
-
-		case 'i':
-			col = 8;
-			break;
-
+			
 		default:
 			break;
 		}
-		return col;
+		return LetraColumna;
 	}
 }
