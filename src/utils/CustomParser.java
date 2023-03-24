@@ -50,43 +50,43 @@ public class CustomParser {
 	
 	public static int invertirNum(int NumFila) {
 		// Pasamos un número del 0 a numtotal-1
-		int LetraColumna = 0;
+		int NumFilaInvertido = 0;
 		switch (NumFila) {
 		case 1:
-			LetraColumna = 8;
+			NumFilaInvertido = 8;
 			break;
 
 		case 2:
-			LetraColumna = 7;
+			NumFilaInvertido = 7;
 			break;
 
 		case 3:
-			LetraColumna = 6;
+			NumFilaInvertido = 6;
 			break;
 
 		case 4:
-			LetraColumna = 5;
+			NumFilaInvertido = 5;
 			break;
 
 		case 5:
-			LetraColumna = 4;
+			NumFilaInvertido = 4;
 			break;
 
 		case 6:
-			LetraColumna = 3;
+			NumFilaInvertido = 3;
 			break;
 
 		case 7:
-			LetraColumna = 2;
+			NumFilaInvertido = 2;
 			break;
 
 		case 8:
-			LetraColumna = 1;
+			NumFilaInvertido = 1;
 			break;
 			
 		default:
 			break;
 		}
-		return LetraColumna;
+		return NumFilaInvertido;
 	}
 }
